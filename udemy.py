@@ -71,7 +71,7 @@ def get_course_id(url, cookies):
 
 def get_course_coupon(url):
     f = open("coursewithcouponlink.txt", "a")
-    f.write(url)
+    f.write(url+'\n')
     f.close()
     query = urlsplit(url).query
     params = parse_qs(query)
